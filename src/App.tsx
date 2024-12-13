@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Columns className="is-centered">
-        <h1 className="title is-1">D3 DNS Explorer</h1>
+        <h1 className="title is-1 has-text-primary">D3 DNS Explorer</h1>
       </Columns>
 
       <Container className="is-max-tablet padding-top">
