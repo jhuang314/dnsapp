@@ -3,6 +3,9 @@ import "./App.css";
 import { D3Widget } from "@d3-inc/marketplace-widget";
 import { DNSConnect } from "@webinterop/dns-connect";
 import { Button, Form, Columns, Container } from "react-bulma-components";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCopy } from "@fortawesome/free-regular-svg-icons";
 
 const { Input, Field, Control, Label, Select } = Form;
 
@@ -89,6 +92,15 @@ function App() {
 
       <Container className="is-max-tablet padding-top">
         <div>Resolved result: {result}</div>
+        {result == "" ? (
+          <></>
+        ) : (
+          <CopyToClipboard text={result}>
+            <button>
+              Copy <FontAwesomeIcon icon={faCopy}></FontAwesomeIcon>
+            </button>
+          </CopyToClipboard>
+        )}
       </Container>
 
       <D3Widget
