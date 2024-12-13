@@ -4,7 +4,7 @@ This app allows you to resolve Web3 DNS address for several chains by using the 
 
 ## Setup
 
-Clone this repo:
+Clone this repo and install deps:
 
 ```bash
 git clone https://github.com/jhuang314/dnsapp.git
@@ -12,7 +12,16 @@ git clone https://github.com/jhuang314/dnsapp.git
 cd dnsapp
 
 npm install
+```
 
+Obtain a [D3 api key](https://developers.d3.app), and create a .env file
+
+```bash
+touch .env
+echo 'VITE_D3_API_KEY=<YOUR_D3_API_KEY>' >> .env
+```
+
+```bash
 npm run dev
 ```
 
