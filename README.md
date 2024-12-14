@@ -27,6 +27,15 @@ npm run dev
 
 Open up localhost:5173
 
+## Docker stuff
+
+You can productionize the app and deploy with docker using the supplied Dockerfile.
+
+```bash
+docker build -t jh3141/dnsapp:0.0.3 .
+```
+
+
 ## Technologies
 
 This app uses Vite + React + Bulma components, with [DNS Connect SDK](https://docs.d3.app/resolve-d3-names#d3-connect-sdk) to handle resolving.
